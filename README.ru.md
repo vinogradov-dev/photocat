@@ -9,7 +9,7 @@
 дублей и похожих снимков, смысловые теги, OCR и лица — всё локально; раскладка по датам. Оригиналы
 не меняются.
 
-*English version: [README.md](README.md).*
+*English version: [README.md](README.md). Страница проекта: [ruchej-dev.github.io/photocat](https://ruchej-dev.github.io/photocat/index.ru.html).*
 
 Что менялось и когда: [CHANGELOG.ru.md](CHANGELOG.ru.md). Знак и иконка окна лежат в
 [`assets/`](assets/) (ADR 0052).

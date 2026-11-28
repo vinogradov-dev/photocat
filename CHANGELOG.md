@@ -38,6 +38,9 @@ maintainer needs. A release takes the `[Unreleased]` section, gives it a version
   `docs/` that carry front matter, so they are the only ones Jekyll renders; they say what the
   project is in the words people search for and link every document by its GitHub URL instead of
   publishing a second copy that would drift (`docs/_config.yml`).
+- The site is pointed at from both sides: `homepage` in `Cargo.toml`, the repository's Website field
+  and the line under the title of both READMEs; `docs/_config.yml` gives it a sitemap and puts the
+  social preview into `og:image`.
 
 ### Changed
 

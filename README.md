@@ -9,7 +9,7 @@ A **photocatalog** for a family media archive, in Rust: a photo catalogue that i
 finds exact duplicates and near-duplicates, tags photos by content, reads the text on them (OCR)
 and clusters faces — all locally; plus a date-based showcase. Originals are never modified.
 
-*Русская версия: [README.ru.md](README.ru.md).*
+*Русская версия: [README.ru.md](README.ru.md). The project page: [ruchej-dev.github.io/photocat](https://ruchej-dev.github.io/photocat/).*
 
 What changed and when: [CHANGELOG.md](CHANGELOG.md). The mark and the window icon live in
 [`assets/`](assets/) (ADR 0052).

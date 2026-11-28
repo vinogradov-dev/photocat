@@ -7,3 +7,9 @@
 title: photocat
 description: A local-first photocatalog for a family photo archive, in Rust — indexing, duplicates, semantic search, OCR, faces. Originals untouched.
 theme: jekyll-theme-minimal
+# The card `jekyll-seo-tag` puts into `og:image` and `twitter:image`: the same 1280×640 PNG that the
+# repository's social preview takes, so a link to the site and a link to the repository unfold into
+# the same picture. The file lives in `assets/` because `assets/render.sh` renders it there.
+image: https://raw.githubusercontent.com/ruchej-dev/photocat/main/assets/photocat-social.png
+plugins:
+  - jekyll-sitemap
