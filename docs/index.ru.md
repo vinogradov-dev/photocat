@@ -2,6 +2,7 @@
 title: photocat — фотокаталог семейного фотоархива
 description: Локальный фотокаталог на Rust — индексация, дубли, смысловой поиск, OCR, лица. Оригиналы не меняются.
 show_downloads: false
+locale: ru_RU
 image: https://raw.githubusercontent.com/ruchej-dev/photocat/main/assets/photocat-social.png
 ---
 
