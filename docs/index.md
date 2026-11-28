@@ -2,6 +2,7 @@
 title: photocat — a photocatalog for a family photo archive
 description: A local-first photocatalog in Rust — indexing, duplicates, semantic search, OCR, faces. Originals untouched.
 show_downloads: false
+image: https://raw.githubusercontent.com/ruchej-dev/photocat/main/assets/photocat-social.png
 ---
 
 # photocat — a photocatalog for a family photo archive

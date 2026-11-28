@@ -1,15 +1,31 @@
 # GitHub Pages reads `docs/` as the site (`Settings → Pages`, branch `main`, folder `/docs`).
 #
-# Only `index.md` and `index.ru.md` carry front matter, so they are the two pages Jekyll renders;
-# every other file here is copied as it lies and stays a document of the repository, read on
-# github.com. The landing page therefore links to those documents by their GitHub URL instead of
-# publishing a second copy that would drift.
+# Only `index.md` and `index.ru.md` are published; every other document here keeps being a file of the
+# repository, read on github.com with its relative links intact, so the landing page links those by
+# their GitHub URL instead of publishing a second copy that would drift — and a second copy whose own
+# `UI.md`-style links would 404 under `/photocat/`. `references/` holds the owner's mock-ups and their
+# design notes: working material, not a publication.
 title: photocat
 description: A local-first photocatalog for a family photo archive, in Rust — indexing, duplicates, semantic search, OCR, faces. Originals untouched.
 theme: jekyll-theme-minimal
+
+exclude:
+  - ARCHITECTURE.md
+  - ARCHITECTURE.ru.md
+  - DECISIONS.md
+  - DECISIONS.ru.md
+  - SCREENSHOTS.md
+  - SCREENSHOTS.ru.md
+  - UI.md
+  - UI.ru.md
+  - references
+
 # The card `jekyll-seo-tag` puts into `og:image` and `twitter:image`: the same 1280×640 PNG that the
 # repository's social preview takes, so a link to the site and a link to the repository unfold into
 # the same picture. The file lives in `assets/` because `assets/render.sh` renders it there.
 image: https://raw.githubusercontent.com/ruchej-dev/photocat/main/assets/photocat-social.png
+# The square mark, for the `logo` a search engine reads out of the structured data.
+logo: https://raw.githubusercontent.com/ruchej-dev/photocat/main/assets/photocat-1024.png
+
 plugins:
   - jekyll-sitemap
