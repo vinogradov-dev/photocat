@@ -34,6 +34,10 @@ maintainer needs. A release takes the `[Unreleased]` section, gives it a version
 - The social preview, 1280×640: the lockup on its plate as `assets/photocat-social.svg`, rendered by
   `assets/render.sh` into the PNG that GitHub's *Settings → General → Social preview* takes — the
   card a link to the repository unfolds into in Telegram, Slack, Discord, Reddit and X.
+- A landing page for GitHub Pages: `docs/index.md` and `docs/index.ru.md` are the only two files of
+  `docs/` that carry front matter, so they are the only ones Jekyll renders; they say what the
+  project is in the words people search for and link every document by its GitHub URL instead of
+  publishing a second copy that would drift (`docs/_config.yml`).
 
 ### Changed
 

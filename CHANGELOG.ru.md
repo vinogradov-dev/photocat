@@ -34,6 +34,10 @@
 - Социальное превью 1280×640: локап на своей плите в `assets/photocat-social.svg`, из которого
   `assets/render.sh` делает PNG для *Settings → General → Social preview* — та карточка, в которую
   разворачивается ссылка на репозиторий в Telegram, Slack, Discord, Reddit и X.
+- Страница для GitHub Pages: `docs/index.md` и `docs/index.ru.md` — единственные два файла в `docs/`
+  с front matter, поэтому Jekyll рендерит только их; на них сказано, что это за проект, словами, по
+  которым его ищут, а все документы даны ссылками на их GitHub URL, а не второй копией, которая
+  разошлась бы с первой (`docs/_config.yml`).
 
 ### Изменено
 

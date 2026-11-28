@@ -1,0 +1,9 @@
+# GitHub Pages reads `docs/` as the site (`Settings → Pages`, branch `main`, folder `/docs`).
+#
+# Only `index.md` and `index.ru.md` carry front matter, so they are the two pages Jekyll renders;
+# every other file here is copied as it lies and stays a document of the repository, read on
+# github.com. The landing page therefore links to those documents by their GitHub URL instead of
+# publishing a second copy that would drift.
+title: photocat
+description: A local-first photocatalog for a family photo archive, in Rust — indexing, duplicates, semantic search, OCR, faces. Originals untouched.
+theme: jekyll-theme-minimal
