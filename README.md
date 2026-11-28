@@ -5,9 +5,9 @@
 
 # photocat
 
-A media-archive cataloguer in Rust: indexing, exact duplicates and near-duplicates, semantic
-tags, OCR and face clustering — all locally; plus a date-based showcase. Originals are never
-modified.
+A **photocatalog** for a family media archive, in Rust: a photo catalogue that indexes folders,
+finds exact duplicates and near-duplicates, tags photos by content, reads the text on them (OCR)
+and clusters faces — all locally; plus a date-based showcase. Originals are never modified.
 
 *Русская версия: [README.ru.md](README.ru.md).*
 
@@ -196,3 +196,10 @@ Third-party models, crates and programs keep their own licenses: the CLIP and fa
 downloaded by the owner and are not distributed with the source code; `ffmpeg`, `ffprobe` and
 `tesseract` are external programs the app only calls, and the weights are fetched by the binary itself
 (`ureq` + `rustls`, ADR 0047).
+
+## Keywords
+
+What this project is, in the words people search for: photocatalog, photocatalogue, photo catalog,
+photo catalogue, photo organizer, photo archive manager, photo library, deduplication, similar
+images, semantic search, CLIP, OCR, face clustering, local-first, offline, no cloud, privacy, Rust,
+SQLite, egui.

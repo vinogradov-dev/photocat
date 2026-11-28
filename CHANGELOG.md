@@ -31,6 +31,9 @@ maintainer needs. A release takes the `[Unreleased]` section, gives it a version
   README shows it at — with the ink framed by equal air and no cropping [M26.22].
 - Screenshots of every screen, in English and Russian, and the gallery in `docs/SCREENSHOTS.md`
   and `docs/SCREENSHOTS.ru.md`.
+- The social preview, 1280×640: the lockup on its plate as `assets/photocat-social.svg`, rendered by
+  `assets/render.sh` into the PNG that GitHub's *Settings → General → Social preview* takes — the
+  card a link to the repository unfolds into in Telegram, Slack, Discord, Reddit and X.
 
 ### Changed
 
@@ -40,6 +43,8 @@ maintainer needs. A release takes the `[Unreleased]` section, gives it a version
   confirmation or a refusal is the owner's decision [M26.17].
 - The duplicate settings left the left panel for the page that owns the groups: the threshold,
   “Find groups”, the summary and the plan stand above the cards [M26.18].
+- The READMEs and the crate metadata name the project the way people search for it: a photocatalog,
+  a photo catalogue, a photo organizer, with the search words in a section of their own.
 
 ### Fixed
 

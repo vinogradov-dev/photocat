@@ -30,6 +30,7 @@ light_band='#f1f5f9'
 
 mark_svg=$here/photocat-mark.svg
 lockup_svg=$here/photocat-lockup.svg
+social_svg=$here/photocat-social.svg
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 
@@ -87,3 +88,11 @@ for theme in dark light; do
     [ "$theme" = light ] && suffix='-light'
     render "$lockup_svg" 800 '' "$mark" "$ground" "$word" "$out/photocat-lockup$suffix.png"
 done
+
+echo "the social preview, for a link card:"
+# 1280 by 640 is the size GitHub asks for a repository's social preview and the size a card is drawn
+# at by Telegram, Slack, Discord, Reddit and X, so nothing is downscaled on the way. The plate is the
+# dark band in both themes: a card is shown beside text whose colour nobody knows, and a dark plate
+# keeps the amber mark readable on a white page. Width and height are both passed, and they agree
+# with the viewBox's 2:1, so the drawing is not stretched.
+render "$social_svg" 1280 640 "$dark_mark" "$dark_band" "$dark_word" "$out/photocat-social.png"

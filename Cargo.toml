@@ -3,6 +3,12 @@ name = "photocat"
 version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
+description = "A local-first photocatalog for a family media archive: indexing, duplicates, CLIP search, OCR, faces. Originals untouched."
+repository = "https://github.com/ruchej-dev/photocat"
+homepage = "https://github.com/ruchej-dev/photocat"
+keywords = ["photocatalog", "photo", "deduplication", "ocr", "clip"]
+categories = ["multimedia::images"]
+readme = "README.md"
 
 [dependencies]
 anyhow = "1.0.104"

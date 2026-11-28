@@ -11,6 +11,7 @@ same Apache-2.0 as the code.
 |---|---|
 | `photocat-mark.svg` | the mark, 32×32 units, **the source of every raster below** |
 | `photocat-lockup.svg` | the mark and the word side by side — native 800×220, the ink (758.4×182.3) framed with equal air on all four sides |
+| `photocat-social.svg` | the same lockup on a 1280×640 plate — a link card, not a second drawing: one group maps the lockup's 800×220 onto 960×264 in the middle of the plate |
 
 Both are the owner's drawings, kept verbatim: the paths were not redrawn, only re-wrapped. The colours
 are CSS variables, so one file serves both themes:
@@ -48,6 +49,7 @@ build time: the binary embeds exactly two files, and a compositor or a package r
 | `photocat-1024.png` | 1024×1024 | amber on the plate | a store page, a press kit, a print |
 | `photocat-lockup.png` | 800×220 | dark band, light word | the README in a dark theme |
 | `photocat-lockup-light.png` | 800×220 | light band, dark word | the README in a light theme |
+| `photocat-social.png` | 1280×640 | dark band, light word | GitHub's *Settings → General → Social preview* and a link card in Telegram, Slack, Discord, Reddit or X: the size those cards want, uploaded by hand once, because no API sets it |
 
 The two lockups are chosen by the reader's theme with `<picture>` + `prefers-color-scheme`, so a
 single README is legible on GitHub's dark and light pages. Their canvas *is* the size the README shows
@@ -62,7 +64,9 @@ with the viewBox stretch the drawing, which is how the first lockup ended up cro
 - **A colour**: the palette at the top of `render.sh` and the `<style>` block of the SVG — both, or a
   browser and the program disagree.
 - **The drawing**: the owner's file. Re-export it and run `render.sh`: the wrapper only adds the
-  `<style>`, the `<mask>` and the crop of the lockup.
+  `<style>`, the `<mask>` and the crop of the lockup. `photocat-social.svg` carries a copy of that
+  geometry on purpose — an SVG cannot include another file — so a change to the mark or the word is
+  made in `photocat-lockup.svg` and copied over; nothing else in it is drawn by hand.
 
 ## What the rasters do not do
 
